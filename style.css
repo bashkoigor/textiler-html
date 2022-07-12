@@ -1,3 +1,4 @@
+header {margin-bottom: 60px;}
 .header-top {background:#17283c;}
 .header-top .top-menu li {padding: 0 18px;}
 .header-top .top-menu li a {color: white; text-decoration: none; text-transform: uppercase; font-size: 12px; font-weight: 600;}
@@ -83,6 +84,9 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+.header-bottom .search-wrapper {position: relative;}
+.header-bottom .search-wrapper button {position: absolute; right: 0px; top: 4px; color: #dd1515; border: none;}
+.header-bottom .search-wrapper button:hover {color: red;}
 .header-bottom .search-wrapper input.form-control {
     height: 46px;
     background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D);
@@ -274,6 +278,7 @@
 .header-bottom .vertical-menu .dropdown-menu ul li a:hover {color:red;}
 .header-bottom .vertical-menu .dropdown-menu .menu-divider {color:grey!important; opacity: 0.1!important;}
 .show-menu {display: block!important;}
+#mainCarousel {max-width: 1890px; margin: 0 auto;}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
