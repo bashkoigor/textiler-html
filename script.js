@@ -17,3 +17,12 @@ $(document).ready(function(){
         }
     );
 });
+
+// Recommended product carousel
+const obRecommended1 = document.querySelector("#recommended1");
+if (obRecommended1) {
+    const recommended1 = new Carousel(obRecommended1, {
+        slidesPerPage: 1,
+        center: false
+    });
+}

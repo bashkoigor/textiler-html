@@ -314,7 +314,6 @@ header {margin-bottom: 60px;}
     transition: all 0.5s ease;
 }
 .menu-categories .item a:hover:after {right:-75%;top:120%}
-.menu-categories .item a:hover:after {left:-75%;right:auto}
 .menu-categories .item a:hover img {filter:brightness(85%)}
 .menu-categories .title {text-transform: uppercase; font-weight: bold; font-size: 16px; margin-bottom: 20px;}
 .menu-categories .link {
@@ -327,9 +326,27 @@ header {margin-bottom: 60px;}
     margin-bottom: 20px;
 }
 .menu-categories .link:hover {color: #dd1515;}
+#recommended1 {
+    color: #170724;
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%),
+    0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+}
+#recommended1 img {width: 100%;}
+#recommended1 .carousel__slide {width: 25%; padding: 10px;}
+#recommended1 .carousel__dots {display: none;}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
         max-width: 1240px;
     }
+}
+@media (max-width: 992px) {
+    #recommended1 .carousel__slide { width: 35%; }
+}
+@media (max-width: 768px) {
+    #recommended1 .carousel__slide { width: 50%; }
 }
