@@ -26,3 +26,24 @@ if (obRecommended1) {
         center: false
     });
 }
+const obRecommended2 = document.querySelector("#recommended2");
+if (obRecommended2) {
+    const recommended2 = new Carousel(obRecommended2, {
+        slidesPerPage: 1,
+        center: false
+    });
+}
+const obRecommended3 = document.querySelector("#recommended3");
+if (obRecommended3) {
+    const recommended3 = new Carousel(obRecommended3, {
+        slidesPerPage: 1,
+        center: false
+    });
+}
+const obBlog = document.querySelector("#blog-carousel");
+if (obBlog) {
+    const blog = new Carousel(obBlog, {
+        slidesPerPage: 1,
+        center: false
+    });
+}
