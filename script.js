@@ -47,3 +47,18 @@ if (obBlog) {
         center: false
     });
 }
+// Scroll to top
+window.onscroll = function() {
+    if (window.pageYOffset == 0) {
+        document.getElementById("to-top").style.display = "none";
+    } else {
+        document.getElementById("to-top").style.display = "block";
+    }
+}
+document.getElementById("to-top").onclick = function() { scrollToTop() };
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

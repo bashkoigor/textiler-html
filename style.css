@@ -1,4 +1,3 @@
-header {margin-bottom: 60px;}
 .header-top {background:#17283c;}
 .header-top .top-menu li {padding: 0 18px;}
 .header-top .top-menu li a {color: white; text-decoration: none; text-transform: uppercase; font-size: 12px; font-weight: 600;}
@@ -38,7 +37,7 @@ header {margin-bottom: 60px;}
     min-width: 28px;
     display: inline-block;
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 13px;
     background: url(img/icon.png);
     vertical-align: middle;
 }
@@ -107,10 +106,10 @@ header {margin-bottom: 60px;}
     width: 100%;
 }
 .header-bottom .phone-wrapper {
-    padding: 0 16px 0 12px;
+    padding: 0 12px;
     background: #fff;
     height: 46px;
-    min-width: 200px;
+    /*max-width: 200px;*/
     -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 15%);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -494,6 +493,15 @@ header {margin-bottom: 60px;}
 .width-75 {width: 75%;}
 .second-footer {background: black; padding: 20px; font-size: 12px; color: white;}
 .second-footer .pay-icon-wrapper {text-align: right;}
+#to-top {
+    color: #e72627;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
