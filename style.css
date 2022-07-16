@@ -434,6 +434,66 @@ header {margin-bottom: 60px;}
     text-align: center;
     position: absolute;
 }
+.footer {background: url(img/bg_footer.png); padding-top: 30px; color: #909090;}
+.footer .title-block {padding: 10px 20px; background: white;}
+.footer .title-block .img-wrapper {width: 30%; display: inline;}
+.footer .title-block .text-wrapper {
+    width: 70%;
+    display: inline;
+    margin-left: 14px;
+    font-weight: 700;
+    color: #666;
+    font-size: 13px;
+}
+.footer .content-block .icon-operator {
+    width: 30px;
+    min-width: 30px;
+    height: 39px;
+    background: url(img/icon.png);
+    background-position: -57px -211px;
+}
+.footer .content-block .footer-title {color: #909090; font-size: 13px;}
+.footer .content-block .footer-phone {color: #e72627; font-size: 16px; font-weight: bold;}
+.footer .content-block .footer-text {color: #e72627; font-size: 13px;}
+.footer .content-block p {font-size: 14px;}
+.footer .content-block .icon-address {
+    width: 24px;
+    min-width: 24px;
+    height: 34px;
+    background: url(img/icon.png);
+    background-position: -92px -211px;
+    margin-left: 3px;
+}
+.footer .content-block .icon-email {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    background: url(img/icon.png);
+    background-position: -121px -211px;
+}
+.footer #newsletter {
+    border: none;
+    border-radius: inherit;
+    padding: 14px;
+    font-size: 11px;
+}
+.footer .subscribe-btn {
+    color: grey;
+    background: black;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 0px;
+}
+.footer ul {padding-left: 0; list-style-type: none;}
+.footer .social-list li {display: inline-block; margin-right: 20px;}
+.footer .social-list li a {color: white;}
+.footer .social-list li a:hover {color: #e72627;}
+.footer .footer-menu li a:hover {color: #e72627;}
+.footer .footer-menu li a {color: #909090; font-size: 13px; text-decoration: none;}
+.footer .footer-menu li {margin-bottom: 6px;}
+.width-75 {width: 75%;}
+.second-footer {background: black; padding: 20px; font-size: 12px; color: white;}
+.second-footer .pay-icon-wrapper {text-align: right;}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
@@ -446,5 +506,8 @@ header {margin-bottom: 60px;}
 }
 @media (max-width: 768px) {
     .recommended .carousel__slide {width: 50%;}
-    .blog-carousel .carousel__slide {width: 100%;}
+    .blog-carousel .carousel__slide {width: 100%!important;}
+    .content-block.width-75 {width: 100%}
+    .second-footer b {margin-bottom: 10px; display: block; text-align: center;}
+    .second-footer .pay-icon-wrapper {text-align: center;}
 }
