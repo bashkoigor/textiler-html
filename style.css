@@ -502,6 +502,23 @@
     bottom: 20px;
     display: none;
 }
+.header-mobile {background: #193558;}
+.header-mobile i {color: white;}
+.header-mobile .logo {width: 100px;}
+.header-mobile .search-wrapper {position: relative;}
+.header-mobile .search-wrapper .btn {position: absolute; top: -3px; right: 0; border: none;}
+.header-mobile .search-wrapper .btn i {font-size: 12px; color: #000!important;}
+.header-mobile .search-wrapper input {background: #f4f4f4; border-radius: 20px; padding: 4px 12px;}
+.header-mobile .search-wrapper input::placeholder {font-size: 12px; color: #bab7b7;}
+.menu-categories-mobile ul {list-style-type: none;}
+.menu-categories-mobile ul li {padding: 12px; 0px;}
+.menu-categories-mobile ul li a {text-decoration: none; color: black;}
+.menu-categories-mobile ul li img {width: 24px; height: 25px;}
+.menu-categories-mobile .accordion-body {padding: 0px;}
+.menu-categories-mobile .accordion-item  { border: none;}
+.menu-categories-mobile .accordion-button:focus {box-shadow: none; border-color: rgba(0,0,0,.125);}
+.menu-categories-mobile .single {padding: 12px 20px; text-decoration: none; color: black; display: block;}
+.menu-categories-mobile .accordion-button:not(.collapsed) {background-color: #f8f9fa;}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
