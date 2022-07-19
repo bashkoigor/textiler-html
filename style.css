@@ -511,7 +511,7 @@
 .header-mobile .search-wrapper input {background: #f4f4f4; border-radius: 20px; padding: 4px 12px;}
 .header-mobile .search-wrapper input::placeholder {font-size: 12px; color: #bab7b7;}
 .menu-categories-mobile ul {list-style-type: none;}
-.menu-categories-mobile ul li {padding: 12px; 0px;}
+.menu-categories-mobile ul li {padding: 12px 0px;}
 .menu-categories-mobile ul li a {text-decoration: none; color: black;}
 .menu-categories-mobile ul li img {width: 24px; height: 25px;}
 .menu-categories-mobile .accordion-body {padding: 0px;}
