@@ -62,3 +62,16 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+// Catalog List Grid view switcher
+$("#list-view").click(function(){
+    $("#grid-view").removeClass("active");
+    $("#list-view").addClass("active");
+    $("#grid-list").removeClass("grid");
+    $("#grid-list").addClass("list");
+});
+$("#grid-view").click(function(){
+    $("#list-view").removeClass("active");
+    $("#grid-view").addClass("active");
+    $("#grid-list").removeClass("list");
+    $("#grid-list").addClass("grid");
+});
