@@ -97,13 +97,22 @@ $("#grid-view").click(function(){
 });
 
 // Decrease, increase product amount
-let x = 1;
-$(".product-amount input").attr('value', x);
-$(".product-amount-increase").click(function(){
-    $(".product-amount input").attr('value', ++x);
+$(".product-amount-increase").click(function() {
+    let x = $(this).siblings(".product-amount input").val();
+    $(this).siblings(".product-amount input").attr('value', ++x);
 });
-$(".product-amount-decrease").click(function(){
+$(".product-amount-decrease").click(function() {
+    let x = $(this).siblings(".product-amount input").val();
     if (x > 1) {
-        $(".product-amount input").attr('value', --x);
+        $(this).siblings(".product-amount input").attr('value', --x);
     }
 });
+
+// $(".product-amount-increase").click(function(){
+//     $(".product-amount input").attr('value', ++x);
+// });
+// $(".product-amount-decrease").click(function(){
+//     if (x > 1) {
+//         $(".product-amount input").attr('value', --x);
+//     }
+// });

@@ -643,7 +643,10 @@
 .product .nav-link.active {border-bottom: 1px solid #e72627;}
 .product .tab-content {font-size: 14px; font-weight: 300; color: #666;}
 .product input[type=number]::-webkit-inner-spin-button,
-.product input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin: 0;}
+.cart input[type=number]::-webkit-inner-spin-button,
+.product input[type=number]::-webkit-outer-spin-button,
+.cart input[type=number]::-webkit-outer-spin-button
+{-webkit-appearance: none; margin: 0;}
 .product-amount {
     flex-shrink: 0;
     display: inline-flex;
@@ -665,7 +668,49 @@
     border-right: transparent;
     text-align: center;
 }
-
+.cart .cart-title {
+    padding: 16px 0;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    font-weight: 500;
+}
+.cart .cart-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.cart .cart-item img {max-width: 100px;}
+.cart .cart-item .label {text-decoration: none; color: #666; font-size: 14px; text-transform: capitalize;}
+.cart .cart-item .label:hover {color: #e72627;}
+.cart .cart-items .cart-item {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+    padding: 19px 0px;
+    margin-bottom: 20px;
+}
+.cart .product-amount-decrease, .product-amount-increase {padding: 4px 6px;}
+.cart .product-amount-number {max-width: 40px;}
+.cart .total-price {color: #c64e4e;}
+.cart .remove {color: #bfbfbf; font-size: 12px; cursor: pointer;}
+.cart .remove:hover {color: #e72627;}
+.cart .cart-summary {border: 1px solid #e9e9e9; padding: 20px;}
+.cart .cart-summary p {font-size: 14px;}
+.cart .cart-summary hr {color: grey;}
+.cart .cart-summary .label {display: inline-block;}
+.cart .cart-summary .value {display: inline-block; float: right;}
+.cart .cart-summary .cart-summary-line {margin-bottom: 14px; font-size: 14px;}
+.cart .cart-summary .btn:hover {background: #e72627;}
+.cart .cart-summary .btn {
+    background: #424242;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
