@@ -95,3 +95,15 @@ $("#grid-view").click(function(){
     $("#grid-list").removeClass("list");
     $("#grid-list").addClass("grid");
 });
+
+// Decrease, increase product amount
+let x = 1;
+$(".product-amount input").attr('value', x);
+$(".product-amount-increase").click(function(){
+    $(".product-amount input").attr('value', ++x);
+});
+$(".product-amount-decrease").click(function(){
+    if (x > 1) {
+        $(".product-amount input").attr('value', --x);
+    }
+});
