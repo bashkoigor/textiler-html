@@ -735,4 +735,5 @@
     .product .button .btn-add-to-cart {float: right;}
     .product .nav-link:hover {border: 1px solid transparent;}
     .product .nav-link.active {border: 1px solid transparent;}
+    .breadcrumb-wrapper .breadcrumb {--bs-breadcrumb-divider: '/'; margin-bottom: 0px; font-size: 12px; color: #6c757d;}
 }
