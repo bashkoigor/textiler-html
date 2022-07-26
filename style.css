@@ -727,6 +727,12 @@
     border: transparent;
 }
 .form-label i {color:#e72627; margin-right: 4px;}
+.faqs .accordion-item {border: none; margin: 5px 0px;}
+.faqs .accordion-body {padding: 20px; background-color: #fafafa; font-size: 14px;}
+.faqs .accordion-button:focus {box-shadow: none; border-color: rgba(0,0,0,.125);}
+.faqs .accordion-button:not(.collapsed) {color: black; box-shadow: none;}
+.faqs .accordion-button {background-color: #fafafa; font-weight: 500;}
+
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{

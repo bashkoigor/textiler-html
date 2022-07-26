@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Textiler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5177f8d642.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <script type="text/javascript" src="https://textiler.es/js/jquery/jquery-1.11.0.min.js" ></script>
+</head>
+<body>
+<header class="sticky-top">
+    <div class="header-top py-4 d-md-block d-none">
+        <div class="container">
+            <div class="row align-items-center no-gutters">
+                <div class="col-xl-3 col-md-2">
+                    <a href="https://textiler.es/">
+                        <img class="logo img-fluid" src="https://textiler.es/img/textiler-logo-1619604778.jpg"
+                             alt="Textiler">
+                    </a>
+                </div>
+                <div class="col-xl-6 col-md-7 text-center position-static">
+                    <ul class="nav nav-pills justify-content-center top-menu">
+                        <li><a href="">Inicio</a></li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                                <li><a class="" href="#">Para la costura y el bordado</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="" href="#">Para la limpieza</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="" href="#">Para planchar y vaporizar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-flex align-items-center justify-content-end header-top-right">
+                    <ul class="nav nav-pills justify-content-center top-info">
+                        <li>
+                            <a href="https://textiler.es/module/novblockwishlist/mywishlist" title="Mi lista de deseos">
+                                <i class="wishlist-icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="header-cart">
+                                <a href="">
+                                    <i class="shopping-cart-icon"></i>
+                                </a>
+                                <span class="cart-products-count">0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="account-icon"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="navbarDropdown2">
+                                <li>
+                                    <a class="login" href="https://textiler.es/mi-cuenta" rel="nofollow"
+                                       title="Log in to your customer account">
+                                        <i class="fa fa-sign-in"></i>
+                                        <span>Entrar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="register" href="https://textiler.es/iniciar-sesion?create_account=1"
+                                       rel="nofollow" title="Registrarse">
+                                        <i class="fa fa-user"></i>
+                                        <span>Registrarse</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="check-out" href="https://textiler.es/pedido" rel="nofollow"
+                                       title="Checkout">
+                                        <i class="fa fa-check-circle"></i>
+                                        <span>Checkout</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a href="https://textiler.es/module/novblockwishlist/mywishlist"
+                                       title="Mi lista de deseos">
+                                        <i class="fa fa-heart"></i>
+                                        <span>Mi lista de deseos</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-mobile mb-0 mb-md-3 d-block d-md-none">
+        <div class="container-fluid py-2">
+            <div class="row g-2">
+                <div class="col-1 d-flex justify-content-center align-self-center">
+                    <i class="fas fa-stream" aria-hidden="true" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft"></i>
+                </div>
+                <div class="col-4">
+                    <a href="/">
+                        <img class="logo" src="https://textiler.es/modules/novthemeconfig/images//Logo_WhitetextilerMobile-1.png" alt="Textiler">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <div class="search-wrapper">
+                        <input type="text" class="form-control" id="search-input2" placeholder="Ingrese palabras clave de búsqueda">
+                        <button class="btn" type="button"><i class="fas fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-self-center">
+                    <i class="fas fa-bars" aria-hidden="true" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header-bottom py-3 d-md-block d-none">
+    <div class="container">
+        <div class="row gx-2">
+            <div class="col-1 col-sm-2 col-md-3 col-lg-3 col-xl-3">
+                <div class="vertical-menu-wrapper">
+                    <div class="vertical-menu">
+                        <div class="menu-title">
+                            <i class="fas fa-stream"></i>
+                            <span>Categorias</span>
+                        </div>
+                        <ul class="menu level1">
+                            <li class="item">
+                                <a href="https://textiler.es/23-para-la-costura-y-el-bordado" title="Para la costura y el bordado">
+                                    <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 28textiler.png" alt="">
+                                    Para la costura y el bordado
+                                </a>
+                                <span class="show-sub fa-active-sub"></span>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="item">
+                                            <a href="https://textiler.es/26-maquinas-de-coser" title="Máquinas de coser">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/maquinasdecoser123textiler.png" alt="">
+                                                Máquinas de coser
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="https://textiler.es/27-maquinas-de-coser-bordar" title="Máquinas de coser + bordar">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 23textiler.png" alt="">
+                                                Máquinas de coser + bordar
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="https://textiler.es/28-remalladoras-overlock-y-recubridoras" title="Remalladoras (Overlock) y recubridoras">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 25textiler.png" alt="">
+                                                Remalladoras (Overlock) y recubridoras
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="https://textiler.es/29-maquinas-bordadoras" title="Máquinas bordadoras">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 13textiler.png" alt="">
+                                                Máquinas bordadoras
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="https://textiler.es/30-maniquis" title="Maniquis">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/maniquistextiler.png" alt="">
+                                                Maniquis
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <hr class="menu-divider">
+                            <li class="item">
+                                <a href="https://textiler.es/22-para-planchar-y-vaporizar" title="Para planchar y vaporizar">
+                                    <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 20textiler.png" alt="">
+                                    Para planchar y vaporizar
+                                </a>
+                                <span class="show-sub fa-active-sub"></span>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="item">
+                                            <a href="https://textiler.es/22-para-planchar-y-vaporizar" title="Planchas">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/planchasdevaporv2textiler.png" alt="">
+                                                Planchas
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="https://textiler.es/22-para-planchar-y-vaporizar" title="Vaporizadores">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/vaporizadoresv3textiler.png" alt="">
+                                                Vaporizadores
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <hr class="menu-divider">
+                            <li class="item">
+                                <a href="https://textiler.es/24-para-la-limpieza" title="Para la limpieza">
+                                    <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 19textiler.png" alt="">
+                                    Para la limpieza
+                                </a>
+                                <span class="show-sub fa-active-sub"></span>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="item">
+                                            <a href="#" title="Aspiradores inalámbricos">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                                Aspiradores inalámbricos
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="#" title="Aspiradores de ciclón">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/ciclonaspiradortextiler.png" alt="">
+                                                Aspiradores de ciclón
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="#" title="Robots aspiradores">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                                Robots aspiradores
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <hr class="menu-divider">
+                            <li class="item">
+                                <a href="https://textiler.es/25-accesorios-y-suministros" title="Accesorios y suministros">
+                                    <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 16textiler.png" alt="">
+                                    Accesorios y suministros
+                                </a>
+                                <span class="show-sub fa-active-sub"></span>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li class="item">
+                                            <a href="#" title="Accesorios de costura y bordado">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                                Accesorios de costura y bordado
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="#" title="Accesorios de limpieza">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                                Accesorios de limpieza
+                                            </a>
+                                        </li>
+                                        <hr class="menu-divider">
+                                        <li class="item">
+                                            <a href="#" title="Accesorios para planchar y vaporizar">
+                                                <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                                Accesorios para planchar y vaporizar
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <hr class="menu-divider">
+                            <li class="item">
+                                <a href="https://textiler.es/2-inicio" title="Ver todo">
+                                    <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 29textiler.png" alt="">
+                                    Ver todo
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-5 col-md-5 col-lg-6 col-xl-7">
+                <div class="search-wrapper">
+                    <input type="text" class="form-control" id="search-input" placeholder="Ingrese palabras clave de búsqueda">
+                    <button class="btn" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                <div class="phone-wrapper d-flex align-items-center">
+                    <i class="phone-icon"></i>
+                    <div class="content">
+                        <p class="phone-number">8-800-555-35-35</p>
+                        <p class="phone-info">Mon - Fri: 8:00 - 17:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-categories-mobile">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLeftLabel">Categorias</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionLeft">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft1" aria-expanded="false" aria-controls="collapseLeft1">
+                            Para la costura y el bordado
+                        </button>
+                    </h2>
+                    <div id="collapseLeft1" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionLeft">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="item">
+                                    <a href="https://textiler.es/26-maquinas-de-coser" title="Máquinas de coser" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/maquinasdecoser123textiler.png" alt="">
+                                        Máquinas de coser
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://textiler.es/27-maquinas-de-coser-bordar" title="Máquinas de coser + bordar" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 23textiler.png" alt="">
+                                        Máquinas de coser + bordar
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://textiler.es/28-remalladoras-overlock-y-recubridoras" title="Remalladoras (Overlock) y recubridoras" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 25textiler.png" alt="">
+                                        Remalladoras (Overlock) y recubridoras
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://textiler.es/29-maquinas-bordadoras" title="Máquinas bordadoras" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/Asset 13textiler.png" alt="">
+                                        Máquinas bordadoras
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://textiler.es/30-maniquis" title="Maniquis" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/maniquistextiler.png" alt="">
+                                        Maniquis
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft2" aria-expanded="false" aria-controls="collapseLeft2">
+                            Para planchar y vaporizar
+                        </button>
+                    </h2>
+                    <div id="collapseLeft2" class="accordion-collapse collapse" aria-labelledby="collapseLeft2" data-bs-parent="#accordionLeft">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="item">
+                                    <a href="https://textiler.es/22-para-planchar-y-vaporizar" title="Planchas" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/planchasdevaporv2textiler.png" alt="">
+                                        Planchas
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="https://textiler.es/22-para-planchar-y-vaporizar" title="Vaporizadores" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/vaporizadoresv3textiler.png" alt="">
+                                        Vaporizadores
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft3" aria-expanded="false" aria-controls="collapseLeft2">
+                            Para la limpieza
+                        </button>
+                    </h2>
+                    <div id="collapseLeft3" class="accordion-collapse collapse" aria-labelledby="collapseLeft3" data-bs-parent="#accordionLeft">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="item">
+                                    <a href="#" title="Aspiradores inalámbricos" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                        Aspiradores inalámbricos
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Aspiradores de ciclón" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/ciclonaspiradortextiler.png" alt="">
+                                        Aspiradores de ciclón
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Robots aspiradores" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                        Robots aspiradores
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeft4" aria-expanded="false" aria-controls="collapseLeft2">
+                            Accesorios y suministros
+                        </button>
+                    </h2>
+                    <div id="collapseLeft4" class="accordion-collapse collapse" aria-labelledby="collapseLeft4" data-bs-parent="#accordionLeft">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="item">
+                                    <a href="#" title="Accesorios de costura y bordado" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                        Accesorios de costura y bordado
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Accesorios de limpieza" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                        Accesorios de limpieza
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="#" title="Accesorios para planchar y vaporizar" class="">
+                                        <img src="https://textiler.es/themes/vinova_nuranium/assets/img/modules/novverticalmenu/icon/robotaspiradortextiler.png" alt="">
+                                        Accesorios para planchar y vaporizar
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="single">Ver todo</a>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">MENÚ</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionRight">
+                <a href="" class="single">Inicio</a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRight1" aria-expanded="false" aria-controls="collapseRight1">
+                            Productos
+                        </button>
+                    </h2>
+                    <div id="collapseRight1" class="accordion-collapse collapse" aria-labelledby="collapseRight1" data-bs-parent="#accordionRight">
+                        <div class="accordion-body">
+                            <ul>
+                                <li class="item">
+                                    <a href="#">Para la costura y el bordado</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Para la limpieza</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Para planchar y vaporizar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="single">Blog</a>
+                <a href="" class="single">Nosotros</a>
+                <a href="" class="single">FAQ</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="breadcrumb-wrapper mb-5">
+        <div class="container py-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="#">Para la costura y el bordado</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Maquinas de coser</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="container faqs">
+        <div class="row my-5">
+            <div class="col-12">
+                <h5 class="mb-5">Frequently asked question</h5>
+                <div class="accordion" id="accordionFaqs">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                Sed est elit posuere ac semper at hendrerit a neque?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac pretium metus. Curabitur velit sem, egestas sit amet dolor nec, tristique vulputate enim. Etiam a lorem libero. In egestas ultricies convallis. Sed iaculis arcu id justo dapibus pharetra. Maecenas et aliquam eros, sit amet volutpat nisi. Duis feugiat mattis maximus. Nulla sollicitudin lorem vitae neque ultricies efficitur. Sed pulvinar tellus enim, non tincidunt nisl imperdiet quis. Maecenas maximus lorem eu justo tincidunt mollis
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Why Lorem ipsum dolor sit amet ?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac pretium metus. Curabitur velit sem, egestas sit amet dolor nec, tristique vulputate enim. Etiam a lorem libero. In egestas ultricies convallis. Sed iaculis arcu id justo dapibus pharetra. Maecenas et aliquam eros, sit amet volutpat nisi. Duis feugiat mattis maximus. Nulla sollicitudin lorem vitae neque ultricies efficitur. Sed pulvinar tellus enim, non tincidunt nisl imperdiet quis. Maecenas maximus lorem eu justo tincidunt mollis
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                What maecenas commodo mi urna, quis accumsan ligula gravida at ?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Duis id leo pulvinar, malesuada libero a, maximus nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sodales imperdiet aliquam. Cras ut placerat tellus. Pellentesque sed ante pellentesque, ornare est quis, consequat odio. Fusce at ligula lacus. Integer vel turpis neque. Aenean vitae auctor ex, sit amet accumsan turpis. Cras imperdiet lacus eget consequat porta.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Integer venenatis suscipit urna id imperdiet. In et mi quis sapien tristique sodales sit amet nec justo ?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Nullam et urna in nibh volutpat euismod. Mauris libero lacus, finibus non nisi ac, rhoncus consectetur ex. Mauris finibus vulputate pretium. Integer ornare leo non hendrerit viverra. Donec accumsan, tortor sagittis ullamcorper scelerisque, nibh tellus rhoncus tortor, at ornare lorem eros eu ante. Etiam convallis porta tellus, tempus vulputate velit imperdiet sit amet. Ut turpis enim, faucibus quis sapien vitae, porttitor malesuada ipsum. Vestibulum eget congue enim. Cras ultricies, nunc id mattis hendrerit, massa nibh laoreet nunc, non feugiat ante ante eget urna.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                Donec lobortis dolor a arcu auctor tincidunt ac fermentum enim ?
+                            </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Quisque magna tellus, porttitor sed finibus sit amet, tincidunt vitae orci. Phasellus aliquet, purus pharetra vehicula molestie, nisi dui eleifend lectus, vitae tincidunt tortor leo a arcu. Phasellus lacus tellus, iaculis ac ante sit amet, sagittis malesuada libero. Donec vehicula leo sit amet egestas egestas. Sed mi ipsum, finibus in urna et, elementum viverra urna.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                Maecenas vitae placerat metus ?
+                            </button>
+                        </h2>
+                        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Morbi hendrerit dui eget ultricies malesuada. Mauris tincidunt vehicula elit eu pharetra. Aliquam ornare purus ornare, tincidunt erat eget, congue risus. Nam tempor nisi in neque ornare aliquam. Nunc eu ligula ac ipsum gravida dictum. Integer molestie arcu id felis dignissim, at gravida erat malesuada. Vestibulum blandit diam at nisi pellentesque fringilla. Nullam a felis et augue lacinia imperdiet. Cras pretium purus vel quam molestie, at iaculis massa ullamcorper. Nunc cursus pulvinar consequat. Duis rhoncus, massa sed viverra vehicula, quam lectus vulputate tellus, non dictum diam felis nec arcu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                Vestibulum nulla velit, tincidunt id neque sed ?
+                            </button>
+                        </h2>
+                        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                Fusce diam tortor, feugiat ac ligula in, bibendum tempor nulla. Sed placerat cursus ornare. Vestibulum faucibus, odio sed placerat rutrum, metus nunc facilisis turpis, vitae viverra ex est dapibus dolor. Nulla pulvinar rhoncus nibh, quis placerat ligula egestas id. Maecenas a vulputate massa. Donec sagittis nibh mauris, quis accumsan nunc convallis ut. Donec rutrum at sem porta fermentum. Proin gravida dapibus sodales. Nam nec enim volutpat, cursus lectus in, elementum leo. Fusce consequat dolor turpis, semper luctus ante faucibus nec.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading9">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                Sed est elit posuere ac semper at hendrerit a neque?
+                            </button>
+                        </h2>
+                        <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionFaqs">
+                            <div class="accordion-body">
+                                In pulvinar aliquam pulvinar. Nullam scelerisque dui eget orci porta, a luctus felis pretium. Nullam lacinia turpis ex, vitae rhoncus purus condimentum non. Aliquam ante sapien, porttitor id finibus dictum, euismod quis lacus. Sed blandit erat id imperdiet blandit. Mauris porta massa a ligula convallis, in consectetur ex blandit. Vivamus laoreet bibendum interdum. Aenean pulvinar leo eu dapibus porta. Nam mattis purus non diam luctus, vitae lobortis nunc dapibus. Nunc ut lacinia velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam eu ornare enim.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-mobile">
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Ajuste</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li>
+                    <a class="login" href="https://textiler.es/mi-cuenta" rel="nofollow" title="Log in to your customer account">
+                        <span>Entrar</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="register" href="https://textiler.es/iniciar-sesion?create_account=1" rel="nofollow" title="Registrarse">
+                        <span>Registrarse</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="check-out" href="https://textiler.es/pedido" rel="nofollow" title="Checkout">
+                        <span>Checkout</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://textiler.es/module/novblockwishlist/mywishlist" title="Mi lista de deseos">
+                        <span>Mi lista de deseos</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid fixed-bottom d-block d-md-none menu">
+        <ul class="nav nav-pills justify-content-center p-2">
+            <li>
+                <a href="https://textiler.es/module/novblockwishlist/mywishlist" title="Mi lista de deseos">
+                    <i class="wishlist-icon"></i>
+                </a>
+            </li>
+            <li>
+                <div class="cart">
+                    <a href="">
+                        <i class="shopping-cart-icon"></i>
+                    </a>
+                    <span class="cart-products-count">0</span>
+                </div>
+            </li>
+            <li>
+                <i class="account-icon" aria-hidden="true" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="footer mt-auto py-4">
+    <div class="container">
+        <div class="row px-2">
+            <div class="col-md-4">
+                <div class="title-block">
+                    <div class="img-wrapper">
+                        <img src="https://textiler.es/modules/jscomposer/uploads/p-1.png" alt="">
+                    </div>
+                    <div class="text-wrapper">Entrega rápida</div>
+                </div>
+                <div class="content-block my-5">
+                    <img src="https://textiler.es/img/textiler-logo-1619604778.jpg" alt="">
+                    <div class="mt-5 d-flex">
+                        <i class="icon-operator"></i>
+                        <div class="ps-3">
+                            <p class="mb-0 footer-title">Servicio al Cliente, 24/7:</p>
+                            <p class="mb-0 footer-phone">8-800-555-35-35</p>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-flex">
+                        <i class="icon-address"></i>
+                        <div class="ps-3">
+                            <p class="mb-0 footer-title">Dirección:</p>
+                            <p class="mb-0 footer-text">Av. de la Constitución, 126, 04009, Valencia</p>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-flex">
+                        <i class="icon-email"></i>
+                        <div class="ps-3">
+                            <p class="mb-0 footer-title">Email:</p>
+                            <p class="mb-0 footer-text">info@textiler.es</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="title-block">
+                    <div class="img-wrapper">
+                        <img src="https://textiler.es/modules/jscomposer/uploads/p-2.png" alt="">
+                    </div>
+                    <div class="text-wrapper">GARANTÍA DE DEVOLUCIÓN DEL DINERO</div>
+                </div>
+                <div class="content-block width-75 my-5">
+                    <h6 class="text-white mb-3">BOLETÍN DE NOTICIAS</h6>
+                    <p>
+                        Suscríbase al boletín de noticias para recibir ofertas especiales y
+                        noticias exclusivas sobre los productos Nuranium
+                    </p>
+                    <form class="newsletter-validation mt-4" novalidate="">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="email" id="newsletter" placeholder="INTRODUZCA TU CORREO ELECTRÓNICO..." required="">
+                            <div class="ininvalid-feedback">Requerido para llenar</div>
+                        </div>
+                        <button type="submit" class="btn subscribe-btn">Suscribir</button>
+                    </form>
+                    <ul class="social-list mt-3">
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="title-block">
+                    <div class="img-wrapper">
+                        <img src="https://textiler.es/modules/jscomposer/uploads/p-3.png" alt="">
+                    </div>
+                    <div class="text-wrapper">VALORES DE GANANCIA</div>
+                </div>
+                <div class="content-block my-5">
+                    <h6 class="text-white mb-3">CUSTOMER SERVICE</h6>
+                    <ul class="footer-menu">
+                        <li><a href="https://textiler.es/content/50-contacto">Contactos</a></li>
+                        <li><a href="https://textiler.es/content/48-aviso-legal">Aviso Legal</a></li>
+                        <li><a href="https://textiler.es/content/5-pago-y-envio">Pago y envio</a></li>
+                        <li><a href="https://textiler.es/content/47-politica-de-privacidad">Política de Privacidad</a></li>
+                        <li><a href="https://textiler.es/content/-condiciones-generales-de-venta">Condiciones Generales de Venta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="second-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <b>Copyright © 2019 TEXTILER IND., S.L. Todos los derechos reservados.</b>
+            </div>
+            <div class="col-md-6 pay-icon-wrapper">
+                <img src="https://textiler.es/modules/jscomposer/uploads/payment.png" alt="" >
+            </div>
+        </div>
+    </div>
+</div>
+<div id="to-top">
+    <i class="far fa-arrow-alt-circle-up"></i>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="script.js" ></script>
+</body>
+</html>
