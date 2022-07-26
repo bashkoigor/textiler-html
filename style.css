@@ -715,6 +715,18 @@
 .checkout .cart-summary .price {font-size: 12px; font-weight: 500;}
 .checkout .cart-summary .amount {font-size: 12px;}
 .checkout .checkout-form .form-label {font-size: 12px;}
+.btn-primary:hover, .btn-primary:focus {background: #dd1515;}
+.btn-primary {
+    min-width: 150px;
+    height: 42px;
+    border-radius: 3px;
+    padding: 9px 50px;
+    background: #e72627;
+    color: white;
+    border-radius: 4px;
+    border: transparent;
+}
+.form-label i {color:#e72627; margin-right: 4px;}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
