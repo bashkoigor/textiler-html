@@ -127,4 +127,21 @@ $(".product-amount-decrease").click(function() {
                 form.classList.add('was-validated')
             }, false)
         })
-})()
+})();
+
+// Hide and show password
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#field-password');
+togglePassword.addEventListener('click', () => {
+    // Toggle the type attribute using
+    // getAttribure() method
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    if (togglePassword.classList.contains('fa-eye-slash')) {
+        togglePassword.classList.remove('fa-eye-slash');
+        togglePassword.classList.add('fa-eye');
+    } else {
+        togglePassword.classList.remove('fa-eye');
+        togglePassword.classList.add('fa-eye-slash');
+    }
+});
