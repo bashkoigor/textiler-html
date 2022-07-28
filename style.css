@@ -770,7 +770,7 @@
 .login form a:hover {color: #e72627;}
 .login form .input-group-text {background-color: white;}
 .login form .input-group-text.custom {cursor: pointer; border-left: none;}
-.login form #field-password {border-right: none;}
+.login form #field-password, .login form #field-confirm-password  {border-right: none;}
 /* Custom container size, 1240px */
 @media (min-width: 1200px) {
     .container{
